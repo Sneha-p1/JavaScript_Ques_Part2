@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Films</h4>
+    <script>
+        let films=["Harry Potter","Interstellar","Annabelle","Spirited Away","Howl's Moving Castle","Train to Busan","Ouija","Sinister"]
+        document.write("List of Films : <br> ",films);
+
+        const myfvt=films.slice(1);
+        const myfvt1=films.slice(1,6); 
+        document.write("<br><br> My Favorite films : <br>",myfvt1)
+
+        films[8]="Snow White ";
+        document.write("<br><br> List after add a film : <br>",films)
+
+        let newlist=films.pop();
+        document.write("<br><br> I don't want this :",newlist);
+        document.write("<br> My fvt films : " ,films);
+
+        delete(films[3]);
+        document.write("<br><br> The least interested film : ",films)
+
+        
+        const movie=films.slice(2,7); 
+        document.write("<br><br> My Favorite films : <br>",movie)
+
+        document.write("<br><br> Position of film acted by your favourite actor : ",films.indexOf("Train to Busan")+1)
+
+        document.write("<br><br> Is Avesham in the list : " ,films.includes("Avesham"));
+    </script>
+</body>
+</html>
